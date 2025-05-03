@@ -1,398 +1,235 @@
 //#include <stdio.h>
+//
 //int main()
 //{
-//	int number;
-//	int total = 0;
-//	char player = 0;
-//	printf("베스킨라빈스 게임을 시작하겠습니다. \n");
-//	while (1) {
-//		printf("%c : ",'A'+ player);
-//		scanf("%d", &number);
-//		if (number > 3 || number < 1)
-//		{
-//			printf("1,2,3만 입력할 수 있습니다.\n");
-//			printf("다시 입력해 주세요\n");
-//			continue;
-//		}
-//		total = number + total;
-//		printf("==> %d\n", total);
-//		player = !player;
-//		if (total >= 31) {
-//		 break;
-//		}
+//	int i;
+//	int hap = 0;
+//
+//	i = 1;
+//	while (i <= 100)
+//	{
+//		if(i % 5 == 0 || i % 8 == 0)
+//			hap = hap + i;
+//		i++;
 //	}
-//		printf("%c가 이겼습니다!\n", 'A' + player); 
+//	printf("%d", hap);
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int i, k;
+//	i = 0;
+//	while (i < 3) {
+//		k = 0;
+//		while (k < 4) {
+//			printf("중첩 while문\n");
+//			k++;
+//		}
+//		i++;
+//	}
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int input1, input2, big, small;//c는 큰 수 d는 작은 수//
+//
+//	printf("시작값 ==> ");
+//	scanf("%d", &input1);
+//	printf("끝값 ==> ");
+//	scanf("%d", &input2);
+//
+//	if (input1 > input2)
+//	{
+//		big = input1;
+//		small = input2;
+//	}
+//	else {
+//		small = input1;
+//		big = input2;
+//	}
+//
+//	while (big >= small) {
+//		if (small % 2 != 0) {
+//			printf("%d ", small);
+//		}
+//		small++;
+//	}
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int a;
+//	int b = 1;
+//	printf("숫자를 여러 개 입력 : ");
+//	scanf("%d", &a);
+//
+//	int num = a;
+//
+//	while (a >= 10)
+//	{
+//		a = a / 10;
+//		b = b * 10;
+//	}
+//	//printf("%d", b);
+//
+//	while (b > 0)
+//	{
+//		a = num / b;
+//		num = num % b;
+//		a = 2 * a;
+//		while (a > 0) {
+//			printf("\u2665");
+//			a--;
+//		}
+//		printf("\n");
+//		b = b / 10;
+//	}
 //}
 //#include <stdio.h>
 //
 //int main()
 //{
-//	int temperature = 20;
-//	do
+//	int count;
+//	for (count = 0; count < 5; count++);
 //	{
-//		printf("현재 온도 : %d\n", temperature);
-//		temperature--;
-//	} while (temperature > 28);
+//		printf("%d", count);
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int count;
+//	for (count = 11; count <= 200; count+= 11)
+//	{
+//			printf("%d", count);
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	float sqLine;
+//	for (sqLine = 0.1; sqLine * 4 <= 21; sqLine += 0.1) {
+//		printf("%.1f\n", sqLine);
+//	}
 //	return 0;
 //}
 //#include <Stdio.h>
-//int main()
-//{
-//	int input;
-//	enum {GAMEOVER, NEWGAME, LOADGAME, OPTION};
-//	do {
-//		printf("\n메뉴를 선택하세요.\n");
-//		printf("1.새 게임 2.이어하기 3.옵션 (0:게임종료)\n");
-//		scanf("%d", &input);
-//
-//		switch (input) {
-//		case NEWGAME:
-//			printf("새 게임 시작\n");
-//			break;
-//		case LOADGAME:
-//			printf("세이브 데이터 로드\n");
-//			break;
-//		case OPTION:
-//			printf("옵션 세팅\n");
-//			break;
-//		}
-//	} while (input != GAMEOVER);
-//
-//	printf("게임을 종료합니다.\n");
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int select;
-//	do {
-//		printf("\n사용자 인터페이스 만들기\n");
-//		printf("1.로그인\n2.이어하기\n3.옵션\n4.만든 사람들\n");
-//		scanf("%d", &select);
-//	} while (select <= 4 && select >= 1);
-//	return 0;
-//}
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <time.h>
 //
 //int main()
 //{
-//	srand((unsigned int)time(NULL));
-//	int command;
-//	int day = 0;
-//	int study = 0;
-//	int play = 0;
-//	int LoL = 0;
+//	printf("1반 1번\n");
+//	printf("1반 2번\n");
+//	printf("1반 3번\n");
+//	printf("2반 1번\n");
+//	printf("2반 2번\n");
+//	printf("2반 3번\n");
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int myClass = 1;
+//	int student = 1;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
 //
-//	do {
-//		printf("\n%d번째 날 !\n", ++day);
-//		printf("오늘도 뭘 할까요?\n");
-//		printf("1. 코딩 공부한다.\n");
-//		printf("2. 놀다.\n");
-//		printf("3. 롤을 합니다.\n");
-//		printf("그외. 끝낸다.\n >>");
-//		scanf("%d", &command);
-//		if (command > 3 || command < 1) break;
-//		int randInt = rand() % 5 + 1;
-//		if (command == 1)
-//		{
-//			switch (randInt) {
-//			case 1:
-//				printf("기분이 좋네요.\n");
-//			case 3:
-//				printf("도서관에서 ");
-//				break;
-//			case 2:
-//				printf("기분이 나빠요.\n");
-//			case 4:
-//				printf("카페에서 ");
-//				break;
-//			case 5: printf("학원에서 ");
-//			}
-//			printf("코딩 공부합시다.\n ");
-//			study++;
-//		}
-//		else if (command == 2)
-//		{
-//			switch (randInt) {
-//			case 1 :
-//				printf("기분이 아주 좋아요.\n");
-//			case 3:
-//				printf("집에서 ");
-//				break;
-//			case 2:
-//				printf("기분이 좋아요.\n");
-//			case 4:	printf("친구들이랑 ");
-//				break;
-//			case 5:printf("놀이동산에서 ");
-//				break;
-//			}printf("놀아요.\n");
-//			play++;
-//		}
-//		else if (command == 3)
-//		{
-//			switch (randInt) {
-//			case 1:
-//				printf("기분이 좋아요.\n");
-//			case 3:
-//				printf("집에서 ");
-//				break;
-//			case 2:
-//				printf("기분이 아주 좋아요.\n");
-//			case 4:
-//				printf("피시방에서 ");
-//				break;
-//			case 5:
-//				printf("친구네 집에서 ");
-//				break;
-//			}
-//			printf("롤 합시다.\n");
-//			LoL++;
-//		}
-//		} while (1);
-//	if (day <= 3) {
-//		printf("그대로입니다...\n");
-//	}
-//	else if (study >= play && study >= LoL)
-//		{
-//		int level = study / 8;
-//		switch (level) {
-//		case 0:
-//			printf("코딩새싹이 되었습니다.!\n");
-//			break;
-//		case 1:
-//			printf("프로그래머가 되었습니다.!\n");
-//			break;
-//		case 2:
-//			printf("Front 개발자가 되었습니다.!\n");
-//		case 3:
-//			printf("BackEnd 개발자가 되었습니다.!\n");
-//		default:
-//			printf("풀스택 개발자가 되었습니다.!\n");
-//			break;
-//		}
-//	}
-//	else if (play >= study && play >= LoL) 
-//	{
-//		int level = study / 5;
-//		switch (level) {
-//		case 0:
-//			printf("당신은 노는 것을 좋아하는 하는 회사원이 되었습니다.\n");
-//			break;
-//		case 1:
-//			printf("당신은 노는 것을 완전 좋아하는 회사원이 되었습니다.\n");
-//			break;
-//		case 2:
-//			printf("당신은 업무시간에 놀기만 하는 가난한 회사원이 되었습니다.\n");
-//			break;
-//		default:
-//			printf("당신은 서울역 노숙자가 되었습니다.\n");
-//			break;
-//		}
-//	}
-//	else if (LoL >= play && LoL >= study) 
-//	{
-//		int level = study / 5;
-//		switch (level) {
-//		case 0:
-//			printf("당신은 LoL을 좋아하는 회사원이 되었습니다.\n");
-//		case 1:
-//			printf("당신은 LoL을 잘하는 회사원이 되었습니다.\n");
-//			break;
-//		case 2: 
-//			printf("당신은 LoL에만 관심있는 가난한 회사원이 되었습니다.\n");
-//			break;
-//		default:
-//			printf("당신은 제 2의 페이커가 되었습니다!!!");
-//			break;
-//		}
-//	}
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int sheep;
-//	for (sheep = 1; sheep <= 5; sheep++) {
-//		printf("양 %d마리\n", sheep);
-//	}
-//	printf("잠들었다!\n");
+//	myClass++; student = 1;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
+//	printf("%d반 %d번\n", myClass, student); student++;
 //	return 0;
 //}
 //#include <stdio.h>
+//
 //int main()
 //{
-//	int sheep;
-//	for (sheep = 1; sheep <= 5; sheep++) 
-//	{
-//		printf("양 %d마리\n", sheep);
-//		if (sheep == 3) {
-//			printf("도중에 잠들었다!\n");
-//			break;
+//	int myClass;
+//	int student;
+//	for (myClass = 1; myClass <= 2; myClass++) {
+//
+//		for (student = 1; student <= 3; student++); {
+//			printf("%d반 %d번 \n", myClass, student);
 //		}
-//	}
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int sheep;
-//	for (sheep = 1; sheep <= 5; sheep++) {
-//		if (sheep == 3) {
-//			printf("졸아서 양을 세지 못했다!\n");
-//			continue;
-//		}
-//		printf("양 %d마리\n", sheep);
-//	}
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int sheep;
-//	for (sheep = 1; sheep <= 20; sheep++) {
-//		printf("양 %d마리\n", sheep);
 //	}
 //	return 0;
 //}
 //#include <Stdio.h>
 //int main()
 //{
-//	int sheep;
-//	for (sheep = 1; sheep <= 50; sheep++) {
-//		if (sheep % 10 == 0) {
-//			printf("졸아서 양을 세지 못했다!\n");
-//			continue;
+//	int myClass;
+//	int student;
+//	for (myClass = 1; myClass <= 8; myClass++) {
+//		for (student = 1; student <= 30; student++) {
+//			printf("%d반 %d번 \n", myClass, student);
 //		}
-//		printf("양 %d 마리\n", sheep);
-//		if (sheep == 45) {
-//			printf("도중에 잠들었다.\n");
-//			break;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int grade;
+//	int myClass;
+//	int student;
+//	for (grade = 1; grade <= 8; grade++)
+//	{
+//		for (myClass = 1; myClass <= 8; myClass++)
+//		{
+//			for (student = 1; student <= 30; student++)
+//			{
+//				printf("%d학년 %d반 %d번 \n", grade, myClass, student);
+//			}
 //		}
-//			
 //	}
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int round;
-//	for (round = 0; round < 10; round++)
-//	{
-//		printf("라운드 %d\n", round);
-//	}
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int count;
-//	for (count = 101; count < 111; count++) 
-//	{
-//		printf("아파트 %d동\n", count);
-//	}
-//	return 0;
-//}
-//#include <stdio.h>
-//
-//int main()
-//{
-//	int number;
-//	int sum_number = 0;
-//	for (number = 1; number <= 20; number++)
-//	{
-//		sum_number = sum_number + number;
-//	}
-//	printf("도합 %d\n", sum_number);
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int count;
-//	int number;
-//	printf("반복할 횟수를 입력하세요 :");
-//	scanf("%d", &count);
-//	for (number = 0; number < count; number++)
-//	{
-//		printf("삐약");
-//	}
-//	printf("\n");
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int sum = 0;
-//	int number;
-//	for (number = 10; number < 100; number++)
-//	{
-//		sum = sum + number;
-//	}
-//	printf("%d", sum);
 //	return 0;
 //}
 //#include <stdio.h>
 //int main()
 //{
 //	int number;
-//	int sum = 1;
-//	for (number = 3; number <= 8; number++)
-//	{
-//		sum = sum * number;
-//	}
-//	printf("%d", sum);
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
 //	int number2;
-//	int number;
-//	for (number = 1; number <= 50; number++)
+//
+//	for (number = 2; number <= 9; number++)
 //	{
-//		number2 = number % 10;
-//		if (number2 % 3 == 0 && number2 != 0 || number / 10 == 3) 
+//		if (number == 3)
 //		{
-//			printf("%d\n", number);
+//			continue;
+//		}
+//		for (number2 = 1; number2 <= 9; number2++)
+//		{
+//			printf("%d * %d = %2d\n", number, number2, number * number2);
+//		}
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int dice4;
+//	int dice6;
+//
+//	for (dice4 = 1; dice4 <= 4; dice4++)
+//	{
+//		for (dice6 = 1; dice6 <= 6; dice6++)
+//		{
+//			printf("%d면 - %d\n", dice4, dice6);
 //		}
 //	}
 //}
 //#include <stdio.h>
-//
 //int main()
 //{
-//	int number;
-//	printf("100 이하의 제곱수를 출력합니다.\n");
-//
-//	for (number = 1; (number * number) <= 100; number++)
-//	{
-//		printf("%d\n", number * number);
+//	int outer;
+//	int inter;
+//	for (outer = 0; outer < 5; outer++) {
+//		printf("%d번째 내부 반복문 진입 \n", outer);
+//		for (inter = 0; inter < 5; inter++) {
+//			printf("내부 반복문 %d번 반복\n", inter);
+//		}
+//		printf("%d번째 내부 반복문 탈칠\n\n", outer);
 //	}
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int exitFor, number;
-//	printf("1부터 10까지 곱한 수 출력 : ");
-//	for (number = 10, exitFor = number - 1; exitFor; number *= exitFor, exitFor--)
-//	{
-//
-//	}
-//	printf("%d\n", number);
-//	return 0;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int number;
-//	int exitFor;
-//	printf("1부터 10까지 곱한 수 출력 : ");
-//	for (number = 10, exitFor = number - 1; exitFor; number *= exitFor, exitFor--)
-//	{
-//	
-//	}
-//	printf("%d\n", number);
-//	return 0;
 //}
