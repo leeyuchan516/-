@@ -1,385 +1,261 @@
+//#define _CHR_SEURE_NO_WARINGS
 //#include <stdio.h>
-//int var = 0;
-//void func1()
-//{
-//	int var = 111;
-//}
-//void func2()
-//{
-//	var = 222;
-//}
+//#include <string.h>
 //void main()
 //{
-//	printf("%d ", var);
-//	func1();
-//	printf("%d ", var);
-//	func2();
-//	printf("%d ", var);
+//	struct bibm {
+//		int a;
+//		float b;
+//		char c;
+//		char d[5];
+//	};
+//
+//	struct bibm b1;
+//
+//	b1.a = 10;
+//	b1.b = 1.1f;
+//	b1.c = 'A';
+//	strcpy(b1.d, "ABCD");
+//
+//	printf("b1.a ==> %d \n", b1.a);
+//	printf("b1.b ==> %f \n", b1.b);
+//	printf("b1.c ==> %c \n", b1.c);
+//	printf("b1.d ==> %s \n", b1.d);
 //}
+//
+//#define _CHR_SECURE_WERINGS
 //#include <stdio.h>
-//
-//struct BYTE
-//{
-//	char a;
-//	char b;
-//};
-//
 //void main()
 //{
-//	struct BYTE a;
-//	a.a = 10;
-//	a.b = 20;
-//	printf("%d %d", a.a, a.b);
-//}
-//#include <stdio.h>
-//struct student
-//{
-//	int id;
-//	char* name;
-//	float aver;
-//};
-//
-//void main()
-//{
-//	struct student s = { 1, (char*)"이샘", 90.5 };
-//	printf("아이디: %d\n", s.id);
-//	printf("이름: %s\n", s.name);
-//	printf("백분율 : %1f\n", s.aver);
-//}
-//#include <stdio.h>
-//
-//struct GUN
-//{
-//	char name[10];
-//	float bullet_type;
-//	bool scope;
-//	bool muzzle;
-//	bool handgrip;
-//	bool magazine;
-//	bool tractical_stock;
-//	int magazine_size;
-//};
-//
-//int main()
-//{
-//	struct GUN M416 = { "M416", 5.56, true, true, true, true, true, 30};
-//	printf("화기명 :%s\n", M416.name);
-//	printf("탄 종류 : %.2f\n", M416.bullet_type);
-//	printf("스코프유무: %s", M416.scope ? "true" : "false");
-//	return 0;
-//}
-//#include <stdio.h>
-//
-//struct _dummy_ {
-//	int data_0;
-//	char data_1;
-//	float data_2;
-//};
-//struct VIP_PERSON {
-//	char grade;
-//	char personCode;
-//	char mileage;
-//};
-//int main() {
-//	int sizedummy = sizeof(_dummy_);
-//	int sizevip = sizeof(VIP_PERSON);
-//	printf("더미 크기 :%d\n", sizedummy);
-//	printf("vip정보 크기: %d\n", sizevip);
-//	return 0;
-//}
-//#include <stdio.h>
-//struct VIP_PERSON {
-//	char grade;
-//	char personCode;
-//	char mileage;
-//};
-//int main() {
-//	VIP_PERSON lee_sam;
-//	printf("고객 등급을 입력하세요\n");
-//	while (true)
-//	{
-//		scanf("%c", &lee_sam.grade);
-//		if (lee_sam.grade && lee_sam.grade <= 'D')
-//			break;
-//	}
-//	int tmp;
-//	printf("고객 코드를 입력하세요\n");
-//	scanf("%d", &tmp);
-//	lee_sam.personCode = (char)tmp;
-//	printf("마일리지를 입력하세요\n");
-//	scanf("%d", &tmp);
-//	lee_sam.mileage = (char)tmp;
-//	printf("%c %d %d\n", lee_sam.grade, lee_sam.personCode, lee_sam.mileage);
-//	return 0;
-//}
-//#include <stdio.h>
-//
-//struct bit {
-//	int data;
-//	int data2;
-//};
-//struct grade {
-//	short grade;
-//	short grade2;
-//	short grade3;
-//	short grade4;
-//};
-//int main()
-//{
-//	int sizebit = sizeof(bit);
-//	printf("%d", sizebit);
-//	int sizegrade = sizeof(grade);
-//	printf("%d", sizegrade);
-//}
-//#include <stdio.h>
-//
-//struct _dummy_ {
-//	int data_0;
-//	char data_1;
-//	float data_2;
-//};
-//int main() {
-//	struct _dummy_ a;
-//	scanf("%d", &a.data_0);
-//	scanf(" %c", &a.data_1);
-//	scanf("%f", &a.data_2);
-//	printf("data_0 = %d\n", a.data_0);
-//	printf("data_1 = %c\n", a.data_1);
-//	printf("data_2 = %.3f\n", a.data_2);
-//}
-//#include <stdio.h>
-//
-//void main()
-//{
-//	short pt1;
-//	scanf("%hd\n", &pt1);
-//	printf("값 :%hd\n", pt1);
-//}
-//#include <stdio.h>
-//
-//short getDefaultData()
-//{
-//	short pt1;
-//	scanf("%hd", &pt1);
-//	return pt1;
-//}
-//void main()
-//{
-//	short pt;
-//	pt = getDefaultData();
-//	printf("값 :%hd\n", pt);
-//}
-//#include <stdio.h>
-//
-//short getDefaultData();
-//void printData(short pt2);
-//
-//void main()
-//{
-//	short pt;
-//	pt = getDefaultData();
-//	printData(pt);
-//}
-//
-//short getDefaultData()
-//{
-//	short pt1;
-//	scanf("%hd", &pt1);
-//	return pt1;
-//}
-//
-//void printData(short pt2)
-//{
-//	printf("값 : %hd\n", pt2);
-//}
-//#include <stdio.h>
-//
-//short getDefaultData();
-//void printData(short pt2);
-//short plus(short pt1);
-//
-//void main()
-//{
-//	short pt;
-//	pt = getDefaultData();
-//	printData(pt);
-//	pt = plus(pt);
-//	printData(pt);
+//	struct student {
+//		char name[10];
+//		int kor;
+//		int eng;
+//		float avg;
+//	};
 //	
+//	struct student s;
+//
+//	printf("이름 :");
+//	scanf("%s", s.name, 9);
+//
+//	printf("국어 점수 :");
+//	scanf("%d", &s.kor);
+//
+//	printf("영어 점수 :");
+//	scanf("%d", &s.eng);
+//
+//	s.avg = (s.kor + s.eng) / 2.0f;
+//
+//	printf("\n------ 구조체 활용 ------\n");
+//	printf("학생 이름 ==> %s\n", s.name);
+//	printf("국어 점수 ==> %d\n", s.kor);
+//	printf("영어 점수 ==> %d\n", s.eng);
+//	printf("평균 점수 ==> %5.1f\n", s.avg);
 //}
 //
-//short getDefaultData()
-//{
-//	short pt1;
-//	scanf("%hd", &pt1);
-//	return pt1;
-//}
-//
-//void printData(short pt2)
-//{
-//	printf("값 : %hd\n", pt2);
-//}
-//
-//short plus(short pt1)
-//{
-//	pt1 += 5;
-//	return pt1;
-//}
-//#include <stdio.h>
-//
-//struct POINT {
-//	short x;
-//	short y;
-//};
-//
-//POINT getDefaultData();
-//void printData(POINT pt2);
-//POINT plus(POINT pt1);
-//
-//void main()
-//{
-//	POINT pt;
-//	pt = getDefaultData();
-//	printData(pt);
-//	pt = plus(pt);
-//	printData(pt);
-//
-//}
-//
-//POINT getDefaultData()
-//{
-//	POINT pt1;
-//	printf("두 수의 값 입력 >>");
-//	scanf("%hd", &pt1.x);
-//	scanf("%hd", &pt1.y);
-//	return pt1;
-//}
-//
-//void printData(POINT pt2)
-//{
-//	printf("값 : %hd\n", pt2.x);
-//	printf("값 : %hd\n", pt2.y);
-//}
-//
-//POINT plus(POINT pt1)
-//{
-//	pt1.x += 5;
-//	pt1.y += 5;
-//	return pt1;
-//}
 //#include <stdio.h>
 //
 //void main()
 //{
-//	char arr[4];
-//	printf("%d\n", sizeof(arr));
-//}
-//#include <stdio.h>
+//	enum week {sun, mon, tue, wed, thu, fri, sat};
 //
-//void main()
-//{
-//	int arr[4];
-//	printf("%d\n", sizeof(arr));
-//}
-//#include <stdio.h>
+//	enum week ww;
 //
-//void main()
+//	ww = sat;
 //
-//{
-//	char alpah[4] = { 'a', 'b', 'c', 'd' };
-//	printf("%c%c%c%c\n", alpah[0], alpah[1], alpah[2], alpah[3]);
+//	if (ww == sun)
+//		printf("오늘은 일요일입니다.\n");
+//	else
+//		printf("오늘은 일요일이 아닙니다.\n");
 //}
-//#include <stdio.h>
 //
-//void main()
-//{
-//	int num[3] = { 3, 6, 9 };
-//	printf("num의 안에 들어있는");
-//	printf("1 번째 숫자는? %d\n", num[1]);
-//}
 //#include <stdio.h>
 //int main()
 //{
-//	int num[3] = { 3, 6, 9 };
-//	printf("%d번째에 %d 저장\n", 0, num[0]);
-//	printf("%d번쨰에 %d 저장\n", 1, num[1]);
-//	printf("%d번째에 %d 저장\n", 2, num[2]);
+//	int arr[5];
+//	for (int k = 0; k < 5; k++)
+//	{
+//		scanf("%d", &arr[k]);
+//	}
+//	printf("\n\n");
+//	for (int k = 0; k < 5; k++) {
+//		printf("%d", arr[k]);
+//	}
+//}
 //
-//	return 0;
-//}
 //#include <stdio.h>
+//
 //int main()
 //{
-//	int num[3] = { 3, 6, 9 };
-//	int k = 0;
-//	printf("%d번째에 %d 저장\n", k, num[k]); k++;
-//	printf("%d번째에 %d 저장\n", k, num[k]); k++;
-//	printf("%d번째에 %d 저장\n", k, num[k]); k++;
-//}
-//#include <stdio.h>
-//int main()
-//{
-//	int num[3] = { 3, 6, 9 };
-//	for (int k = 0; k < 3; k++){
-//		printf("%d번째에 %d 저장\n", k, num[k]);
+//	int number[10];
+//	int same;
+//	for (int k = 0; k < 10; k++)
+//	{
+//		scanf("%d", &number[k]);
+//	}
+//
+//	printf("\n");
+//
+//	int flag = 1;
+//	for (; flag;)
+//	{
+//		scanf("%d", &same);
+//		int k;
+//		for (k = 0; k < 10; k++)
+//		{
+//			if (number[k] == same)
+//			{
+//				printf("exist");
+//				flag = 0;
+//				break;
+//			}
+//		}
 //	}
 //	return 0;
 //}
+//
 //#include <stdio.h>
-//int main()
+//
+//void main()
 //{
-//	int arr[3];
-//	for (int i = 0; i < 3; i++) {
-//		scanf("%d", &arr[i]);
-//		printf("%d\n", arr[i]);
+//	int num[4] = { 4 ,3 ,1 ,2 };
+//	int swap;
+//	swap = num[2];
+//	num[2] = num[3];
+//	num[3] = swap;
+//
+//	swap = num[0];
+//	num[0] = num[3];
+//	num[3] = swap;
+//
+//	swap = num[1];
+//	num[1] = num[2];
+//	num[2] = swap;
+//	for (int k = 0; k < 4; k++)
+//	{
+//		printf("%d ", num[k]);
 //	}
-//	return 0;
 //}
+//
+//#include <stdio.h>
+//
+//void main()
+//{
+//	int num[4];
+//	int small;
+//	for (int a = 0; a < 4; a++)
+//	{
+//		scanf(" %d", &num[a]);
+//	}
+//	int change;
+//	for (int k = 0; k < 4; k++)
+//	{	
+//		small = k;
+//		for(int i = k+1; i < 4; i++)
+//		{
+//			if (num[small] > num[i])
+//			{
+//				small = i;
+//			}
+//		}
+//			change = num[k];
+//			num[k] = num[small];
+//			num[small] = change;
+//	}
+//	for (int k = 0; k < 4; k++)
+//	{
+//		printf("%d", num[k]);
+//	}
+//}
+//
+//#include <stdio.h>
+//
+//void main()
+//{
+//	int one = 1, two = 2;
+//	int max = 0;
+//
+//	if (one > two) max = one;
+//	else max = two;
+//	printf("max = %d \n", max);
+//}
+//
+//#include <stdio.h>
+//
+//void main()
+//{
+//	int one = 1, two = 3, three = 2;
+//	int max = 0;
+//	if (one > two) {
+//		if(one >three)
+//		max = one;
+//	else max = three;
+//	}
+//	else {
+//		if (two > three) max = two;
+//		else max = three;
+//	}
+//	printf("max = %d \n", max);
+//}
+//#include <stdio.h>
+//
+//void main()
+//{
+//	int a[3] = { 1, 3, 2 };
+//	int max = a[0];
+//	for (int i = 1; i < 3; i++) {
+//		if (max < a[i])
+//			max = a[i];
+//	}
+//	printf("max = %d\n", max);
+//}
+//#include <stdio.h>
+//
+//void main()
+//{
+//	int a[5] = { 1, 3, 6, 4, 2 };
+//	int max = a[0];
+//	int min = a[0];
+//	int sum = a[0];
+//	float average;
+//	for (int i = 1; i < 5; i++)
+//	{
+//		if (max < a[i])
+//			max = a[i];
+//
+//		if (min > a[i])
+//			min = a[i];
+//		sum = a[i] + sum;
+//	}
+//	average = sum / (float)5;
+//	printf("최솟값 = %d\n최대값은 = %d \n원소를 총합 = %d \n평균 = %.5f", max, min, sum, average);
+//}
+//
 #include <stdio.h>
+
 int main()
 {
-	int arr[4];
-	for (int k = 0; k < 5; k++)
+	int a[10] = { 1, 1, 4, 5, 6, 2, 3, 3, 4, 1 };
+	int dice[6] = { 0, 0, 0, 0, 0 ,0 };
+	for (int k = 0; k < 10; k++)
 	{
-		scanf("%d", &arr[k]);
+		for (int b = 1; b < 7; b++)
+		{
+			if (b == a[k])
+			{
+				dice[b] = dice[b] + 1;
+			}
+		}
+		
 	}
-	printf("\n\n");
-	for (int k = 0; k < 5; k++) {
-		printf("%d", arr[k]);
-	}
-
 }
 
-//#include <stdio.h>
-//
-//void main()
-//{
-//	int left = 3, right = 5;
-//	left = right;
-//	right = left;
-//	printf("left = %d, ", left);
-//	printf("right = %d \n", right);
-//}
-//#include <stdio.h>
-//
-//void main()
-//{
-//	int left = 3, right = 5;
-//	int temp;
-//	temp = left;
-//	left = right;
-//	printf("left = %d, ", left);
-//	printf("right = %d \n", right);
-//}
-//#include <stdio.h>
-//
-//void main()
-//{
-//	int num[2] = { 10 ,3 };
-//	int temp;
-//	temp = num[0];
-//	num[0] = num[1];
-//	num[1] = temp;
-//	printf("num[0] = %d, ", num[0]);
-//	printf("num[1] = %d\n", num[1]);
-//}
+/*
+1은 3개
+2는 1개
+3은 2개
+4는 2개
+5는 1개
+6는 1개
+*/
